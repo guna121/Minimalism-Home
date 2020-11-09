@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  
+}
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; 
+  zoom: 80%; 
+}
+.Kotak {
+  transform-style: preserve-3d;
+  position: absolute;
+  min-height: 80vh;
+  width: 35rem;
+  border-radius: 35px;
+  padding: 0rem 5rem;
+  background-color: white; 
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  
+}
+                  
+.foto {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.foto img {
+  width: 20rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.lingkaran {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.tombol {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+.tombol button {
+  padding: 0.5rem 4rem;
+  background: gray;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.Instagram {
+  margin-top: 5rem;
+  transition: all 0.75s ease-out;
+}
+.Instagram button {
+  width: 100%;  
+  padding: 1rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: bolder;
+  margin-bottom: 40px;
+}
+
+#bg-video {
+  min-width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#bg-video::-webkit-media-controls {
+  display: none !important;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 7px;
+  width: 100%;
+}
